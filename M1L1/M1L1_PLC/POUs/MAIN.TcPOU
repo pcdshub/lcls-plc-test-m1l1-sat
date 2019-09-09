@@ -50,10 +50,10 @@ M4.nEnableMode; // Xdwn
 M5.nEnableMode; // PitchCoarse
 
 // Encoder Reference Values: Starting motor positions prior to checkout
-//y_up_enc.Ref := ;
-//y_dwn_enc.Ref := ; // Use initial motor positions for now
-//x_up_enc.Ref := ; 
-//x_dwn_enc.Ref := ;
+y_up_enc.Ref := 45425150;
+y_dwn_enc.Ref := 45729500; // Use initial motor positions for now
+x_up_enc.Ref := 20657400; 
+x_dwn_enc.Ref := 20142600;
 
 // Gantry Differences to monitor
 nCurrGantryY := ((ULINT_TO_LINT(y_up_enc.Count) - ULINT_TO_LINT(y_up_enc.Ref)) - (ULINT_TO_LINT(y_dwn_enc.Count) - ULINT_TO_LINT(y_dwn_enc.Ref)));
@@ -65,7 +65,6 @@ M2.bHardwareEnable := stoEnable;
 M3.bHardwareEnable := stoEnable;
 M4.bHardwareEnable := stoEnable;
 M5.bHardwareEnable := stoEnable;
-M6.bHardwareEnable := stoEnable;
 
 
 // Start Autocoupling
@@ -86,7 +85,8 @@ fbMotionStage_x_dwn (stMotionStage:=M4);
 fbMotionStage_pitch (stMotionStage:=M5);]]></ST>
     </Implementation>
     <LineIds Name="MAIN">
-      <LineId Id="44" Count="40" />
+      <LineId Id="44" Count="21" />
+      <LineId Id="67" Count="17" />
       <LineId Id="2" Count="0" />
     </LineIds>
   </POU>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4020.56">
-	<Project ProjectGUID="{4C035F4C-E13B-481F-BC46-EC575A01994A}" Target64Bit="true" ShowHideConfigurations="#x106">
+	<Project ProjectGUID="{4C035F4C-E13B-481F-BC46-EC575A01994A}" TargetNetId="5.54.18.124.1.1" ShowHideConfigurations="#x106">
 		<System>
 			<Tasks>
 				<Task Id="2" Priority="20" CycleTime="100000" AmsPort="350">
@@ -14,5 +14,15 @@
 		<Plc>
 			<Project File="M1L1_PLC.xti"/>
 		</Plc>
+		<Io>
+			<Device File="Device 1 (EtherCAT).xti" Id="1"/>
+			<Device File="Device 4 (EtherCAT).xti" Id="4"/>
+		</Io>
 	</Project>
+	<Mappings>
+		<MappingInfo Identifier="{01010011-0050-0304-1000-010150000403}" Id="#x02030040" Watchdog="00000000000000000000000000000000"/>
+		<MappingInfo Identifier="{05000010-0011-0101-1000-040310000101}" Id="#x02030010" Watchdog="14000000040000000400000004000000"/>
+		<MappingInfo Identifier="{00000000-0050-0304-1000-040350000403}" Id="#x02030020"/>
+		<MappingInfo Identifier="{00000000-0011-0101-1000-010120000403}" Id="#x02030030"/>
+	</Mappings>
 </TcSmProject>

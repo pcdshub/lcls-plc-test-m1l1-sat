@@ -701,12 +701,15 @@ External Setpoint Generation:
 			</Relations>
 		</DataType>
 		<DataType>
-			<Name GUID="{F6778584-9B8B-496B-95A4-76A38550D017}" Namespace="lcls_twincat_motion" AutoDeleteType="true">EL5042_Status</Name>
+			<Name GUID="{F432E414-AA77-4691-899D-EAA979836C15}" Namespace="lcls_twincat_motion" AutoDeleteType="true">EL5042_Status</Name>
 			<BitSize>0</BitSize>
 			<BaseType GUID="{FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF}"/>
+			<Hides>
+				<Hide GUID="{F6778584-9B8B-496B-95A4-76A38550D017}"/>
+			</Hides>
 		</DataType>
 		<DataType>
-			<Name GUID="{EEB7053F-7505-4A7D-A040-7786016AF02A}" Namespace="lcls_twincat_motion" AutoDeleteType="true">ST_RenishawAbsEnc</Name>
+			<Name GUID="{9C1E6D40-2FD7-412A-9552-360C6B20B0DB}" Namespace="lcls_twincat_motion" AutoDeleteType="true">ST_RenishawAbsEnc</Name>
 			<Comment>
 				<![CDATA[ Renishaw BiSS-C absolute encoder used with an EL5042 ]]>
 			</Comment>
@@ -722,7 +725,7 @@ External Setpoint Generation:
 			</SubItem>
 			<SubItem>
 				<Name>Status</Name>
-				<Type GUID="{F6778584-9B8B-496B-95A4-76A38550D017}" Namespace="lcls_twincat_motion">EL5042_Status</Type>
+				<Type GUID="{F432E414-AA77-4691-899D-EAA979836C15}" Namespace="lcls_twincat_motion">EL5042_Status</Type>
 				<Comment>
 					<![CDATA[ Status struct placeholder]]>
 				</Comment>
@@ -738,6 +741,9 @@ External Setpoint Generation:
 				<BitSize>64</BitSize>
 				<BitOffs>64</BitOffs>
 			</SubItem>
+			<Hides>
+				<Hide GUID="{EEB7053F-7505-4A7D-A040-7786016AF02A}"/>
+			</Hides>
 		</DataType>
 		<DataType>
 			<Name GUID="{875D2B22-B7EB-497E-B933-0C004593CCF3}" Namespace="MC" TcBaseType="true" HideType="true" IecDeclaration="DWORD;">PLCTONC_AXIS_REF_CTRL</Name>
@@ -1269,74 +1275,6 @@ External Setpoint Generation:
 					<Type>BOOL</Type>
 				</Var>
 				<Var>
-					<Name>MAIN.M6.Axis.NcToPlc</Name>
-					<Type GUID="{6A65C767-34E5-42BF-AD87-E1A503EAC7BE}" Namespace="MC">NCTOPLC_AXIS_REF</Type>
-					<SubVar>
-						<Name>AxisState</Name>
-						<Comment>
-							<![CDATA[Present State Of The Axis Movement (continuous axis):
-0  = INACTIVE:		axis has no job
-1  = RUNNING:		axis is executing a motion job
-2  = OVERRIDE_ZERO:	axis is executing a job but override is zero
-3  = PHASE_VELOCONST:	axis is moving at constant velocity
-4  = PHASE_ACCPOS:	axis is accelerating
-5  = PHASE_ACCNEG:	axis is decelerating
-Slaves only:
-11 = PREPHASE:		slave axis is in a motion pre-phase
-12 = SYNCHRONIZING:	slave axis is synchronizing
-13 = SYNCHRONOUS:	slave axis is moving synchronously
-External Setpoint Generation:
-41 = EXTSETGEN_MODE1:	external setpoint generation active
-42 = EXTSETGEN_MODE2:	internal and external setpoint gen. active
-]]>
-						</Comment>
-					</SubVar>
-					<SubVar>
-						<Name>HomingState</Name>
-						<Comment>
-							<![CDATA[Axis Homing Status:
-0: idle
-1: start homing
-2: searching home switch
-3: stopping on home switch
-4: moving off home switch
-5: searching sync pulse
-6: stopping after homing
-]]>
-						</Comment>
-					</SubVar>
-					<SubVar>
-						<Name>CoupleState</Name>
-						<Comment>
-							<![CDATA[Axis Coupling Status:
-0: axis is a single axis (not coupled)
-1: axis is a master axis
-2: axis is master and slave
-3: axis is a slave axis
-]]>
-						</Comment>
-					</SubVar>
-				</Var>
-				<Var>
-					<Name>MAIN.M6.bLimitForwardEnable</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.M6.bLimitBackwardEnable</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.M6.bHome</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.M6.bHardwareEnable</Name>
-					<Comment>
-						<![CDATA[ True when Emergency stop button is not activated]]>
-					</Comment>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
 					<Name>MAIN.fbMotionStage_x_up.fbDriveVirtual.MasterAxis.NcToPlc</Name>
 					<Type GUID="{6A65C767-34E5-42BF-AD87-E1A503EAC7BE}" Namespace="MC">NCTOPLC_AXIS_REF</Type>
 					<SubVar>
@@ -1582,57 +1520,8 @@ External Setpoint Generation:
 					</SubVar>
 				</Var>
 				<Var>
-					<Name>MAIN.fbMotionStage_bender.fbDriveVirtual.MasterAxis.NcToPlc</Name>
-					<Type GUID="{6A65C767-34E5-42BF-AD87-E1A503EAC7BE}" Namespace="MC">NCTOPLC_AXIS_REF</Type>
-					<SubVar>
-						<Name>AxisState</Name>
-						<Comment>
-							<![CDATA[Present State Of The Axis Movement (continuous axis):
-0  = INACTIVE:		axis has no job
-1  = RUNNING:		axis is executing a motion job
-2  = OVERRIDE_ZERO:	axis is executing a job but override is zero
-3  = PHASE_VELOCONST:	axis is moving at constant velocity
-4  = PHASE_ACCPOS:	axis is accelerating
-5  = PHASE_ACCNEG:	axis is decelerating
-Slaves only:
-11 = PREPHASE:		slave axis is in a motion pre-phase
-12 = SYNCHRONIZING:	slave axis is synchronizing
-13 = SYNCHRONOUS:	slave axis is moving synchronously
-External Setpoint Generation:
-41 = EXTSETGEN_MODE1:	external setpoint generation active
-42 = EXTSETGEN_MODE2:	internal and external setpoint gen. active
-]]>
-						</Comment>
-					</SubVar>
-					<SubVar>
-						<Name>HomingState</Name>
-						<Comment>
-							<![CDATA[Axis Homing Status:
-0: idle
-1: start homing
-2: searching home switch
-3: stopping on home switch
-4: moving off home switch
-5: searching sync pulse
-6: stopping after homing
-]]>
-						</Comment>
-					</SubVar>
-					<SubVar>
-						<Name>CoupleState</Name>
-						<Comment>
-							<![CDATA[Axis Coupling Status:
-0: axis is a single axis (not coupled)
-1: axis is a master axis
-2: axis is master and slave
-3: axis is a slave axis
-]]>
-						</Comment>
-					</SubVar>
-				</Var>
-				<Var>
 					<Name>MAIN.x_up_enc</Name>
-					<Type GUID="{EEB7053F-7505-4A7D-A040-7786016AF02A}" Namespace="lcls_twincat_motion">ST_RenishawAbsEnc</Type>
+					<Type GUID="{9C1E6D40-2FD7-412A-9552-360C6B20B0DB}" Namespace="lcls_twincat_motion">ST_RenishawAbsEnc</Type>
 					<SubVar>
 						<Name>Count</Name>
 						<Comment>
@@ -1654,7 +1543,7 @@ External Setpoint Generation:
 				</Var>
 				<Var>
 					<Name>MAIN.x_dwn_enc</Name>
-					<Type GUID="{EEB7053F-7505-4A7D-A040-7786016AF02A}" Namespace="lcls_twincat_motion">ST_RenishawAbsEnc</Type>
+					<Type GUID="{9C1E6D40-2FD7-412A-9552-360C6B20B0DB}" Namespace="lcls_twincat_motion">ST_RenishawAbsEnc</Type>
 					<SubVar>
 						<Name>Count</Name>
 						<Comment>
@@ -1676,7 +1565,7 @@ External Setpoint Generation:
 				</Var>
 				<Var>
 					<Name>MAIN.y_up_enc</Name>
-					<Type GUID="{EEB7053F-7505-4A7D-A040-7786016AF02A}" Namespace="lcls_twincat_motion">ST_RenishawAbsEnc</Type>
+					<Type GUID="{9C1E6D40-2FD7-412A-9552-360C6B20B0DB}" Namespace="lcls_twincat_motion">ST_RenishawAbsEnc</Type>
 					<SubVar>
 						<Name>Count</Name>
 						<Comment>
@@ -1698,7 +1587,7 @@ External Setpoint Generation:
 				</Var>
 				<Var>
 					<Name>MAIN.y_dwn_enc</Name>
-					<Type GUID="{EEB7053F-7505-4A7D-A040-7786016AF02A}" Namespace="lcls_twincat_motion">ST_RenishawAbsEnc</Type>
+					<Type GUID="{9C1E6D40-2FD7-412A-9552-360C6B20B0DB}" Namespace="lcls_twincat_motion">ST_RenishawAbsEnc</Type>
 					<SubVar>
 						<Name>Count</Name>
 						<Comment>
@@ -1790,14 +1679,6 @@ External Setpoint Generation:
 					<Type>BOOL</Type>
 				</Var>
 				<Var>
-					<Name>MAIN.M6.Axis.PlcToNc</Name>
-					<Type GUID="{63A84524-72E3-41C8-BEAB-4CCE44690A13}" Namespace="MC">PLCTONC_AXIS_REF</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.M6.bBrakeRelease</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
 					<Name>MAIN.fbMotionStage_x_up.fbDriveVirtual.MasterAxis.PlcToNc</Name>
 					<Type GUID="{63A84524-72E3-41C8-BEAB-4CCE44690A13}" Namespace="MC">PLCTONC_AXIS_REF</Type>
 				</Var>
@@ -1817,10 +1698,6 @@ External Setpoint Generation:
 					<Name>MAIN.fbMotionStage_pitch.fbDriveVirtual.MasterAxis.PlcToNc</Name>
 					<Type GUID="{63A84524-72E3-41C8-BEAB-4CCE44690A13}" Namespace="MC">PLCTONC_AXIS_REF</Type>
 				</Var>
-				<Var>
-					<Name>MAIN.fbMotionStage_bender.fbDriveVirtual.MasterAxis.PlcToNc</Name>
-					<Type GUID="{63A84524-72E3-41C8-BEAB-4CCE44690A13}" Namespace="MC">PLCTONC_AXIS_REF</Type>
-				</Var>
 			</Vars>
 			<TaskPouOids>
 				<TaskPouOid Prio="20" OTCID="#x01010011"/>
@@ -1829,23 +1706,54 @@ External Setpoint Generation:
 	</Project>
 	<Mappings>
 		<OwnerA Name="M1L1_PLC Instance">
-			<OwnerB Name="TINC^NC-Task 1 SAF^Axes^pitch">
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 2 (EL1004)">
+				<Link VarA="PlcTask Inputs^MAIN.stoEnable" VarB="Channel 1^Input"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 10 (EL7047) - PitchCoarse">
+				<Link VarA="PlcTask Inputs^MAIN.M5.bLimitBackwardEnable" VarB="STM Status^Status^Digital input 2"/>
+				<Link VarA="PlcTask Inputs^MAIN.M5.bLimitForwardEnable" VarB="STM Status^Status^Digital input 1"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 11 (EL5042) - Y">
+				<Link VarA="PlcTask Inputs^MAIN.y_dwn_enc^Count" VarB="FB Inputs Channel 2^Position"/>
+				<Link VarA="PlcTask Inputs^MAIN.y_up_enc^Count" VarB="FB Inputs Channel 1^Position"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 12 (EL5042) - X">
+				<Link VarA="PlcTask Inputs^MAIN.x_dwn_enc^Count" VarB="FB Inputs Channel 2^Position"/>
+				<Link VarA="PlcTask Inputs^MAIN.x_up_enc^Count" VarB="FB Inputs Channel 1^Position"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 6 (EL7047) - Yup">
+				<Link VarA="PlcTask Inputs^MAIN.M1.bLimitBackwardEnable" VarB="STM Status^Status^Digital input 2"/>
+				<Link VarA="PlcTask Inputs^MAIN.M1.bLimitForwardEnable" VarB="STM Status^Status^Digital input 1"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 7 (EL7047) - Ydwn">
+				<Link VarA="PlcTask Inputs^MAIN.M2.bLimitBackwardEnable" VarB="STM Status^Status^Digital input 2"/>
+				<Link VarA="PlcTask Inputs^MAIN.M2.bLimitForwardEnable" VarB="STM Status^Status^Digital input 1"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 8 (EL7047) - Xup">
+				<Link VarA="PlcTask Inputs^MAIN.M3.bLimitBackwardEnable" VarB="STM Status^Status^Digital input 2"/>
+				<Link VarA="PlcTask Inputs^MAIN.M3.bLimitForwardEnable" VarB="STM Status^Status^Digital input 1"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 9 (EL7047) - Xdwn">
+				<Link VarA="PlcTask Inputs^MAIN.M4.bLimitBackwardEnable" VarB="STM Status^Status^Digital input 2"/>
+				<Link VarA="PlcTask Inputs^MAIN.M4.bLimitForwardEnable" VarB="STM Status^Status^Digital input 1"/>
+			</OwnerB>
+			<OwnerB Name="TINC^NC-Task 1 SAF^Axes^Axis_PitchCoarse">
 				<Link VarA="PlcTask Inputs^MAIN.M5.Axis.NcToPlc" VarB="Outputs^ToPlc"/>
 				<Link VarA="PlcTask Outputs^MAIN.M5.Axis.PlcToNc" VarB="Inputs^FromPlc"/>
 			</OwnerB>
-			<OwnerB Name="TINC^NC-Task 1 SAF^Axes^x_dwn">
+			<OwnerB Name="TINC^NC-Task 1 SAF^Axes^Axis_Xdwn">
 				<Link VarA="PlcTask Inputs^MAIN.M4.Axis.NcToPlc" VarB="Outputs^ToPlc"/>
 				<Link VarA="PlcTask Outputs^MAIN.M4.Axis.PlcToNc" VarB="Inputs^FromPlc"/>
 			</OwnerB>
-			<OwnerB Name="TINC^NC-Task 1 SAF^Axes^x_up">
+			<OwnerB Name="TINC^NC-Task 1 SAF^Axes^Axis_Xup">
 				<Link VarA="PlcTask Inputs^MAIN.M3.Axis.NcToPlc" VarB="Outputs^ToPlc"/>
 				<Link VarA="PlcTask Outputs^MAIN.M3.Axis.PlcToNc" VarB="Inputs^FromPlc"/>
 			</OwnerB>
-			<OwnerB Name="TINC^NC-Task 1 SAF^Axes^y_dwn">
+			<OwnerB Name="TINC^NC-Task 1 SAF^Axes^Axis_Ydwn">
 				<Link VarA="PlcTask Inputs^MAIN.M2.Axis.NcToPlc" VarB="Outputs^ToPlc"/>
 				<Link VarA="PlcTask Outputs^MAIN.M2.Axis.PlcToNc" VarB="Inputs^FromPlc"/>
 			</OwnerB>
-			<OwnerB Name="TINC^NC-Task 1 SAF^Axes^y_up">
+			<OwnerB Name="TINC^NC-Task 1 SAF^Axes^Axis_Yup">
 				<Link VarA="PlcTask Inputs^MAIN.M1.Axis.NcToPlc" VarB="Outputs^ToPlc"/>
 				<Link VarA="PlcTask Outputs^MAIN.M1.Axis.PlcToNc" VarB="Inputs^FromPlc"/>
 			</OwnerB>

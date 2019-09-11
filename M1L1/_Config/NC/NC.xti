@@ -1760,7 +1760,7 @@ External Setpoint Generation:
 			<AxisPara>
 				<General UnitName="um"/>
 				<Dynamic Acceleration="1000" Deceleration="1000" Jerk="5000" DelayTime="0.008"/>
-				<Velo FastManual="150" Maximum="200"/>
+				<Velo FastManual="150" Maximum="300"/>
 				<OtherSettings AllowMotionCmdToSlave="true"/>
 			</AxisPara>
 			<Encoder Name="Enc" EncType="29">
@@ -1969,7 +1969,7 @@ External Setpoint Generation:
 			<AxisPara>
 				<General UnitName="um"/>
 				<Dynamic Acceleration="1000" Deceleration="1000" Jerk="5000" DelayTime="0.008"/>
-				<Velo FastManual="150" Maximum="200"/>
+				<Velo FastManual="150" Maximum="300"/>
 				<OtherSettings AllowMotionCmdToSlave="true"/>
 			</AxisPara>
 			<Encoder Name="Enc" EncType="29">

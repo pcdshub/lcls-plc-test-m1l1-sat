@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{a9ce9291-81ce-4d14-bcca-8ef50323f594}</ProjectGuid>
+    <AssemblyName>M1L1_Scope</AssemblyName>
+    <Name>M1L1_Scope</Name>
+    <RootNamespace>M1L1_Scope</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Scope YT NC Project.tcscope">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+</Project>

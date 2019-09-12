@@ -25,3 +25,4 @@ dbd
 
 # Output from scope ignores
 *.csv
+*.svd

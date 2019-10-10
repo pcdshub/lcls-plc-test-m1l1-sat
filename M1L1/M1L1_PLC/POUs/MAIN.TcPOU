@@ -42,18 +42,19 @@ VAR
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[// Buttons to enable motors: write 0 to enable, 2 to disable
+      <ST><![CDATA[// M1L1
+// Buttons to enable motors: write 0 to enable, 2 to disable
 M1.nEnableMode; // Yup
 M2.nEnableMode; // Ydwn
 M3.nEnableMode; // Xup
 M4.nEnableMode; // Xdwn
 M5.nEnableMode; // PitchCoarse
 
-// Encoder Reference Values: Starting motor positions prior to checkout
-y_up_enc.Ref := 45425150;
-y_dwn_enc.Ref := 45729500; // Use initial motor positions for now
-x_up_enc.Ref := 20657400; 
-x_dwn_enc.Ref := 20142600;
+// Encoder Reference Values: Using Axilon FAT values
+y_up_enc.Ref := 108558460;
+y_dwn_enc.Ref := 108761210;
+x_up_enc.Ref := 20664670; 
+x_dwn_enc.Ref := 20133000;
 
 // Gantry Differences to monitor
 nCurrGantryY := ((ULINT_TO_LINT(y_up_enc.Count) - ULINT_TO_LINT(y_up_enc.Ref)) - (ULINT_TO_LINT(y_dwn_enc.Count) - ULINT_TO_LINT(y_dwn_enc.Ref)));
@@ -85,6 +86,7 @@ fbMotionStage_x_dwn (stMotionStage:=M4);
 fbMotionStage_pitch (stMotionStage:=M5);]]></ST>
     </Implementation>
     <LineIds Name="MAIN">
+      <LineId Id="124" Count="0" />
       <LineId Id="44" Count="21" />
       <LineId Id="67" Count="17" />
       <LineId Id="2" Count="0" />

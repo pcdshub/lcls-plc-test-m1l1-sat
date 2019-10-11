@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4020.14">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.12">
   <POU Name="MAIN" Id="{2ce36a91-321d-4828-96a2-d7e21b9a58d0}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
@@ -14,7 +14,9 @@ VAR
 	M4: DUT_MotionStage:=(nCommand:=3); // Xdwn
 //	{attribute 'TcLinkTo' := '.bLimFwd:=TIIB[pitch]^STM Status^Status^Digital input 1; .bLimBwd:=TIIB[pitch]^STM Status^Status^Digital input 2'}	
 	M5: DUT_MotionStage:=(nCommand:=3); // PitchCoarse
+
 	fbMotionStage_x_up, fbMotionStage_x_dwn, fbMotionStage_y_up, fbMotionStage_y_dwn, fbMotionStage_pitch : FB_MotionStage;
+	
 	stoEnable AT %I* : BOOL;
 	{attribute 'TcLinkTo' := '.Count:=TIIB[1-x_up_2-x_dwn]^FB Inputs Channel 1^Position'}	
 	x_up_enc  AT %I*: ST_RenishawAbsEnc;
@@ -85,11 +87,5 @@ fbMotionStage_x_up  (stMotionStage:=M3);
 fbMotionStage_x_dwn (stMotionStage:=M4);
 fbMotionStage_pitch (stMotionStage:=M5);]]></ST>
     </Implementation>
-    <LineIds Name="MAIN">
-      <LineId Id="124" Count="0" />
-      <LineId Id="44" Count="21" />
-      <LineId Id="67" Count="17" />
-      <LineId Id="2" Count="0" />
-    </LineIds>
   </POU>
 </TcPlcObject>

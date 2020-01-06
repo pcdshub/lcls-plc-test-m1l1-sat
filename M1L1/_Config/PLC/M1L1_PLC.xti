@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmItem" TcSmVersion="1.0" TcVersion="3.1.4020.56" ClassName="CNestedPlcProjDef">
+<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmItem" TcSmVersion="1.0" TcVersion="3.1.4022.30" ClassName="CNestedPlcProjDef">
 	<DataTypes>
 		<DataType>
 			<Name GUID="{4C3FC5AC-D5AA-44C6-AC5A-159774BA0F6D}" Namespace="MC" TcBaseType="true" HideType="true" IecDeclaration="DWORD;">NCTOPLC_AXIS_REF_STATE</Name>
@@ -701,15 +701,15 @@ External Setpoint Generation:
 			</Relations>
 		</DataType>
 		<DataType>
-			<Name GUID="{F432E414-AA77-4691-899D-EAA979836C15}" Namespace="lcls_twincat_motion" AutoDeleteType="true">EL5042_Status</Name>
+			<Name GUID="{AF8FB368-774F-45F8-8E10-7D3E3CF64D21}" Namespace="lcls_twincat_motion" AutoDeleteType="true">EL5042_Status</Name>
 			<BitSize>0</BitSize>
 			<BaseType GUID="{FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF}"/>
 			<Hides>
-				<Hide GUID="{F6778584-9B8B-496B-95A4-76A38550D017}"/>
+				<Hide GUID="{F432E414-AA77-4691-899D-EAA979836C15}"/>
 			</Hides>
 		</DataType>
 		<DataType>
-			<Name GUID="{9C1E6D40-2FD7-412A-9552-360C6B20B0DB}" Namespace="lcls_twincat_motion" AutoDeleteType="true">ST_RenishawAbsEnc</Name>
+			<Name GUID="{AF99C4B8-5A10-430E-878E-F17D034B6B0D}" Namespace="lcls_twincat_motion" AutoDeleteType="true">ST_RenishawAbsEnc</Name>
 			<Comment>
 				<![CDATA[ Renishaw BiSS-C absolute encoder used with an EL5042 ]]>
 			</Comment>
@@ -722,10 +722,16 @@ External Setpoint Generation:
 				</Comment>
 				<BitSize>64</BitSize>
 				<BitOffs>0</BitOffs>
+				<Properties>
+					<Property>
+						<Name>TcAddressType</Name>
+						<Value>Input</Value>
+					</Property>
+				</Properties>
 			</SubItem>
 			<SubItem>
 				<Name>Status</Name>
-				<Type GUID="{F432E414-AA77-4691-899D-EAA979836C15}" Namespace="lcls_twincat_motion">EL5042_Status</Type>
+				<Type GUID="{AF8FB368-774F-45F8-8E10-7D3E3CF64D21}" Namespace="lcls_twincat_motion">EL5042_Status</Type>
 				<Comment>
 					<![CDATA[ Status struct placeholder]]>
 				</Comment>
@@ -742,7 +748,7 @@ External Setpoint Generation:
 				<BitOffs>64</BitOffs>
 			</SubItem>
 			<Hides>
-				<Hide GUID="{EEB7053F-7505-4A7D-A040-7786016AF02A}"/>
+				<Hide GUID="{FC9F3A2F-4D55-43E9-B609-672F86D5C3AE}"/>
 			</Hides>
 		</DataType>
 		<DataType>
@@ -925,13 +931,17 @@ External Setpoint Generation:
 		</DataType>
 	</DataTypes>
 	<Project GUID="{9A0D7DCA-0EE6-474E-B222-8B1100F1F227}" Name="M1L1_PLC" PrjFilePath="..\..\M1L1_PLC\M1L1_PLC.plcproj" TmcFilePath="..\..\M1L1_PLC\M1L1_PLC.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e">
-		<Instance Id="#x01010010" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2">
+		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="M1L1_PLC\M1L1_PLC.tmc">
 			<Name>M1L1_PLC Instance</Name>
 			<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 			<Vars VarGrpType="1">
 				<Name>PlcTask Inputs</Name>
 				<Var>
-					<Name>MAIN.stoEnable</Name>
+					<Name>MAIN.stoEnable1</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.stoEnable2</Name>
 					<Type>BOOL</Type>
 				</Var>
 				<Var>
@@ -1521,7 +1531,7 @@ External Setpoint Generation:
 				</Var>
 				<Var>
 					<Name>MAIN.x_up_enc</Name>
-					<Type GUID="{9C1E6D40-2FD7-412A-9552-360C6B20B0DB}" Namespace="lcls_twincat_motion">ST_RenishawAbsEnc</Type>
+					<Type GUID="{AF99C4B8-5A10-430E-878E-F17D034B6B0D}" Namespace="lcls_twincat_motion">ST_RenishawAbsEnc</Type>
 					<SubVar>
 						<Name>Count</Name>
 						<Comment>
@@ -1543,7 +1553,7 @@ External Setpoint Generation:
 				</Var>
 				<Var>
 					<Name>MAIN.x_dwn_enc</Name>
-					<Type GUID="{9C1E6D40-2FD7-412A-9552-360C6B20B0DB}" Namespace="lcls_twincat_motion">ST_RenishawAbsEnc</Type>
+					<Type GUID="{AF99C4B8-5A10-430E-878E-F17D034B6B0D}" Namespace="lcls_twincat_motion">ST_RenishawAbsEnc</Type>
 					<SubVar>
 						<Name>Count</Name>
 						<Comment>
@@ -1565,7 +1575,7 @@ External Setpoint Generation:
 				</Var>
 				<Var>
 					<Name>MAIN.y_up_enc</Name>
-					<Type GUID="{9C1E6D40-2FD7-412A-9552-360C6B20B0DB}" Namespace="lcls_twincat_motion">ST_RenishawAbsEnc</Type>
+					<Type GUID="{AF99C4B8-5A10-430E-878E-F17D034B6B0D}" Namespace="lcls_twincat_motion">ST_RenishawAbsEnc</Type>
 					<SubVar>
 						<Name>Count</Name>
 						<Comment>
@@ -1587,7 +1597,7 @@ External Setpoint Generation:
 				</Var>
 				<Var>
 					<Name>MAIN.y_dwn_enc</Name>
-					<Type GUID="{9C1E6D40-2FD7-412A-9552-360C6B20B0DB}" Namespace="lcls_twincat_motion">ST_RenishawAbsEnc</Type>
+					<Type GUID="{AF99C4B8-5A10-430E-878E-F17D034B6B0D}" Namespace="lcls_twincat_motion">ST_RenishawAbsEnc</Type>
 					<SubVar>
 						<Name>Count</Name>
 						<Comment>
@@ -1700,15 +1710,12 @@ External Setpoint Generation:
 				</Var>
 			</Vars>
 			<TaskPouOids>
-				<TaskPouOid Prio="20" OTCID="#x01010011"/>
+				<TaskPouOid Prio="20" OTCID="#x08502001"/>
 			</TaskPouOids>
 		</Instance>
 	</Project>
 	<Mappings>
 		<OwnerA Name="M1L1_PLC Instance">
-			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 2 (EL1004)">
-				<Link VarA="PlcTask Inputs^MAIN.stoEnable" VarB="Channel 1^Input"/>
-			</OwnerB>
 			<OwnerB Name="TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 10 (EL7047) - PitchCoarse">
 				<Link VarA="PlcTask Inputs^MAIN.M5.bLimitBackwardEnable" VarB="STM Status^Status^Digital input 2"/>
 				<Link VarA="PlcTask Inputs^MAIN.M5.bLimitForwardEnable" VarB="STM Status^Status^Digital input 1"/>
@@ -1720,6 +1727,10 @@ External Setpoint Generation:
 			<OwnerB Name="TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 12 (EL5042) - X">
 				<Link VarA="PlcTask Inputs^MAIN.x_dwn_enc^Count" VarB="FB Inputs Channel 2^Position"/>
 				<Link VarA="PlcTask Inputs^MAIN.x_up_enc^Count" VarB="FB Inputs Channel 1^Position"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 18 (EL1004)">
+				<Link VarA="PlcTask Inputs^MAIN.stoEnable1" VarB="Channel 1^Input"/>
+				<Link VarA="PlcTask Inputs^MAIN.stoEnable2" VarB="Channel 2^Input"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 6 (EL7047) - Yup">
 				<Link VarA="PlcTask Inputs^MAIN.M1.bLimitBackwardEnable" VarB="STM Status^Status^Digital input 2"/>

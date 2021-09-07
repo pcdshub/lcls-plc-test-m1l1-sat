@@ -3,13 +3,17 @@
   <POU Name="MAIN" Id="{2ce36a91-321d-4828-96a2-d7e21b9a58d0}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
-    M1: DUT_MotionStage:=(nCommand:=3); // Yup
-	M2: DUT_MotionStage:=(nCommand:=3); // Ydwn
-	M3: DUT_MotionStage:=(nCommand:=3); // Xup
-	M4: DUT_MotionStage:=(nCommand:=3); // Xdwn
-	M5: DUT_MotionStage:=(nCommand:=3); // PitchCoarse
+    M1: DUT_MotionStage:=(nEnableMode:=ENUM_StageEnableMode.ALWAYS, bPowerSelf:=TRUE); // Yup
+	M2: DUT_MotionStage:=(nEnableMode:=ENUM_StageEnableMode.ALWAYS, bPowerSelf:=TRUE); // Ydwn
+	M3: DUT_MotionStage:=(nEnableMode:=ENUM_StageEnableMode.ALWAYS, bPowerSelf:=TRUE); // Xup
+	M4: DUT_MotionStage:=(nEnableMode:=ENUM_StageEnableMode.ALWAYS, bPowerSelf:=TRUE); // Xdwn
+	M5: DUT_MotionStage:=(nEnableMode:=ENUM_StageEnableMode.ALWAYS, bPowerSelf:=TRUE); // PitchCoarse
 
-	fbMotionStage_x_up, fbMotionStage_x_dwn, fbMotionStage_y_up, fbMotionStage_y_dwn, fbMotionStage_pitch : FB_MotionStage;
+	fbMotionStage_x_up : FB_MotionStage;
+    fbMotionStage_x_dwn : FB_MotionStage;
+    fbMotionStage_y_up : FB_MotionStage;
+    fbMotionStage_y_dwn : FB_MotionStage;
+    fbMotionStage_pitch : FB_MotionStage;
 	
 	stoEnable1 AT %I* : BOOL;
 	stoEnable2 AT %I* : BOOL;
@@ -39,11 +43,18 @@ END_VAR
     <Implementation>
       <ST><![CDATA[// M1L1
 // Buttons to enable motors: write 0 to enable, 2 to disable
-M1.nEnableMode; // Yup
-M2.nEnableMode; // Ydwn
-M3.nEnableMode; // Xup
-M4.nEnableMode; // Xdwn
-M5.nEnableMode; // PitchCoarse
+// PitchCoarse
+Main.M1.bHardwareEnable := TRUE;
+fbMotionStage_y_up(stMotionStage:=Main.M1);
+
+Main.M2.bHardwareEnable := TRUE;
+fbMotionStage_y_dwn(stMotionStage:=Main.M2);
+
+Main.M3.bHardwareEnable := TRUE;
+fbMotionStage_x_up(stMotionStage:=Main.M3);
+
+Main.M4.bHardwareEnable := TRUE;
+fbMotionStage_x_dwn(stMotionStage:=Main.M4);
 
 // Encoder Reference Values: Using Axilon FAT values
 y_up_enc.Ref := 108558460;
@@ -80,5 +91,23 @@ fbMotionStage_x_up  (stMotionStage:=M3);
 fbMotionStage_x_dwn (stMotionStage:=M4);
 fbMotionStage_pitch (stMotionStage:=M5);]]></ST>
     </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="3" Count="1" />
+      <LineId Id="9" Count="1" />
+      <LineId Id="87" Count="0" />
+      <LineId Id="91" Count="1" />
+      <LineId Id="90" Count="0" />
+      <LineId Id="93" Count="0" />
+      <LineId Id="89" Count="0" />
+      <LineId Id="83" Count="0" />
+      <LineId Id="95" Count="0" />
+      <LineId Id="94" Count="0" />
+      <LineId Id="86" Count="0" />
+      <LineId Id="84" Count="0" />
+      <LineId Id="11" Count="3" />
+      <LineId Id="88" Count="0" />
+      <LineId Id="16" Count="27" />
+      <LineId Id="2" Count="0" />
+    </LineIds>
   </POU>
 </TcPlcObject>

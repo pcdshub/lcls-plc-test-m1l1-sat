@@ -1,0 +1,174 @@
+
+Links
+-----
+
+.. csv-table::
+    :header: Owner A, Item A, Owner B, Item B
+    :align: center
+
+        Axes^Axis_PitchCoarse, Drive^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 10 (EL7047) - PitchCoarse, STM Status^Status^Error
+        Axes^Axis_PitchCoarse, Drive^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 10 (EL7047) - PitchCoarse, STM Status^Status^Motor stall
+        Axes^Axis_PitchCoarse, Drive^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 10 (EL7047) - PitchCoarse, STM Status^Status^Moving negative
+        Axes^Axis_PitchCoarse, Drive^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 10 (EL7047) - PitchCoarse, STM Status^Status^Moving positive
+        Axes^Axis_PitchCoarse, Drive^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 10 (EL7047) - PitchCoarse, STM Status^Status^Ready
+        Axes^Axis_PitchCoarse, Drive^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 10 (EL7047) - PitchCoarse, STM Status^Status^Ready to enable
+        Axes^Axis_PitchCoarse, Drive^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 10 (EL7047) - PitchCoarse, STM Status^Status^Torque reduced
+        Axes^Axis_PitchCoarse, Drive^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 10 (EL7047) - PitchCoarse, STM Status^Status^Warning
+        Axes^Axis_PitchCoarse, Drive^Inputs^In^nState2, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 10 (EL7047) - PitchCoarse, STM Status^Status^Digital input 1
+        Axes^Axis_PitchCoarse, Drive^Inputs^In^nState2, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 10 (EL7047) - PitchCoarse, STM Status^Status^Digital input 2
+        Axes^Axis_PitchCoarse, Drive^Inputs^In^nState2, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 10 (EL7047) - PitchCoarse, STM Status^Status^Sync error
+        Axes^Axis_PitchCoarse, Drive^Inputs^In^nState2, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 10 (EL7047) - PitchCoarse, STM Status^Status^TxPDO Toggle
+        Axes^Axis_PitchCoarse, Drive^Inputs^In^nState4, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 10 (EL7047) - PitchCoarse, WcState^InputToggle
+        Axes^Axis_PitchCoarse, Drive^Inputs^In^nState4, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 10 (EL7047) - PitchCoarse, WcState^WcState
+        Axes^Axis_PitchCoarse, Drive^Outputs^Out^nCtrl1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 10 (EL7047) - PitchCoarse, STM Control^Control^Enable
+        Axes^Axis_PitchCoarse, Drive^Outputs^Out^nCtrl1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 10 (EL7047) - PitchCoarse, STM Control^Control^Reduce torque
+        Axes^Axis_PitchCoarse, Drive^Outputs^Out^nCtrl1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 10 (EL7047) - PitchCoarse, STM Control^Control^Reset
+        Axes^Axis_PitchCoarse, Drive^Outputs^Out^nCtrl2, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 10 (EL7047) - PitchCoarse, STM Control^Control^Digital output 1
+        Axes^Axis_PitchCoarse, Drive^Outputs^Out^nDataOut2[0], TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 10 (EL7047) - PitchCoarse, STM Velocity^Velocity
+        Axes^Axis_PitchCoarse, Enc^Inputs^In^nComState, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 13 (EL5042) - Pitch, WcState^InputToggle
+        Axes^Axis_PitchCoarse, Enc^Inputs^In^nComState, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 13 (EL5042) - Pitch, WcState^WcState
+        Axes^Axis_PitchCoarse, Enc^Inputs^In^nDataIn1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 13 (EL5042) - Pitch, FB Inputs Channel 1^Position
+        Axes^Axis_PitchCoarse, Enc^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 13 (EL5042) - Pitch, FB Inputs Channel 1^Status^Diag
+        Axes^Axis_PitchCoarse, Enc^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 13 (EL5042) - Pitch, FB Inputs Channel 1^Status^Error
+        Axes^Axis_PitchCoarse, Enc^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 13 (EL5042) - Pitch, FB Inputs Channel 1^Status^Input cycle counter
+        Axes^Axis_PitchCoarse, Enc^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 13 (EL5042) - Pitch, FB Inputs Channel 1^Status^Ready
+        Axes^Axis_PitchCoarse, Enc^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 13 (EL5042) - Pitch, FB Inputs Channel 1^Status^TxPDO State
+        Axes^Axis_PitchCoarse, Enc^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 13 (EL5042) - Pitch, FB Inputs Channel 1^Status^Warning
+        Axes^Axis_Xdwn, Drive^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 9 (EL7047) - Xdwn, STM Status^Status^Error
+        Axes^Axis_Xdwn, Drive^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 9 (EL7047) - Xdwn, STM Status^Status^Motor stall
+        Axes^Axis_Xdwn, Drive^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 9 (EL7047) - Xdwn, STM Status^Status^Moving negative
+        Axes^Axis_Xdwn, Drive^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 9 (EL7047) - Xdwn, STM Status^Status^Moving positive
+        Axes^Axis_Xdwn, Drive^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 9 (EL7047) - Xdwn, STM Status^Status^Ready
+        Axes^Axis_Xdwn, Drive^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 9 (EL7047) - Xdwn, STM Status^Status^Ready to enable
+        Axes^Axis_Xdwn, Drive^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 9 (EL7047) - Xdwn, STM Status^Status^Torque reduced
+        Axes^Axis_Xdwn, Drive^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 9 (EL7047) - Xdwn, STM Status^Status^Warning
+        Axes^Axis_Xdwn, Drive^Inputs^In^nState2, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 9 (EL7047) - Xdwn, STM Status^Status^Digital input 1
+        Axes^Axis_Xdwn, Drive^Inputs^In^nState2, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 9 (EL7047) - Xdwn, STM Status^Status^Digital input 2
+        Axes^Axis_Xdwn, Drive^Inputs^In^nState2, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 9 (EL7047) - Xdwn, STM Status^Status^Sync error
+        Axes^Axis_Xdwn, Drive^Inputs^In^nState2, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 9 (EL7047) - Xdwn, STM Status^Status^TxPDO Toggle
+        Axes^Axis_Xdwn, Drive^Inputs^In^nState4, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 9 (EL7047) - Xdwn, WcState^InputToggle
+        Axes^Axis_Xdwn, Drive^Inputs^In^nState4, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 9 (EL7047) - Xdwn, WcState^WcState
+        Axes^Axis_Xdwn, Drive^Outputs^Out^nCtrl1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 9 (EL7047) - Xdwn, STM Control^Control^Enable
+        Axes^Axis_Xdwn, Drive^Outputs^Out^nCtrl1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 9 (EL7047) - Xdwn, STM Control^Control^Reduce torque
+        Axes^Axis_Xdwn, Drive^Outputs^Out^nCtrl1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 9 (EL7047) - Xdwn, STM Control^Control^Reset
+        Axes^Axis_Xdwn, Drive^Outputs^Out^nCtrl2, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 9 (EL7047) - Xdwn, STM Control^Control^Digital output 1
+        Axes^Axis_Xdwn, Drive^Outputs^Out^nDataOut2[0], TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 9 (EL7047) - Xdwn, STM Velocity^Velocity
+        Axes^Axis_Xdwn, Enc^Inputs^In^nComState, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 12 (EL5042) - X, WcState^InputToggle
+        Axes^Axis_Xdwn, Enc^Inputs^In^nComState, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 12 (EL5042) - X, WcState^WcState
+        Axes^Axis_Xdwn, Enc^Inputs^In^nDataIn1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 12 (EL5042) - X, FB Inputs Channel 2^Position
+        Axes^Axis_Xdwn, Enc^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 12 (EL5042) - X, FB Inputs Channel 2^Status^Diag
+        Axes^Axis_Xdwn, Enc^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 12 (EL5042) - X, FB Inputs Channel 2^Status^Error
+        Axes^Axis_Xdwn, Enc^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 12 (EL5042) - X, FB Inputs Channel 2^Status^Input cycle counter
+        Axes^Axis_Xdwn, Enc^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 12 (EL5042) - X, FB Inputs Channel 2^Status^Ready
+        Axes^Axis_Xdwn, Enc^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 12 (EL5042) - X, FB Inputs Channel 2^Status^TxPDO State
+        Axes^Axis_Xdwn, Enc^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 12 (EL5042) - X, FB Inputs Channel 2^Status^Warning
+        Axes^Axis_Xup, Drive^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 8 (EL7047) - Xup, STM Status^Status^Error
+        Axes^Axis_Xup, Drive^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 8 (EL7047) - Xup, STM Status^Status^Motor stall
+        Axes^Axis_Xup, Drive^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 8 (EL7047) - Xup, STM Status^Status^Moving negative
+        Axes^Axis_Xup, Drive^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 8 (EL7047) - Xup, STM Status^Status^Moving positive
+        Axes^Axis_Xup, Drive^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 8 (EL7047) - Xup, STM Status^Status^Ready
+        Axes^Axis_Xup, Drive^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 8 (EL7047) - Xup, STM Status^Status^Ready to enable
+        Axes^Axis_Xup, Drive^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 8 (EL7047) - Xup, STM Status^Status^Torque reduced
+        Axes^Axis_Xup, Drive^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 8 (EL7047) - Xup, STM Status^Status^Warning
+        Axes^Axis_Xup, Drive^Inputs^In^nState2, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 8 (EL7047) - Xup, STM Status^Status^Digital input 1
+        Axes^Axis_Xup, Drive^Inputs^In^nState2, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 8 (EL7047) - Xup, STM Status^Status^Digital input 2
+        Axes^Axis_Xup, Drive^Inputs^In^nState2, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 8 (EL7047) - Xup, STM Status^Status^Sync error
+        Axes^Axis_Xup, Drive^Inputs^In^nState2, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 8 (EL7047) - Xup, STM Status^Status^TxPDO Toggle
+        Axes^Axis_Xup, Drive^Inputs^In^nState4, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 8 (EL7047) - Xup, WcState^InputToggle
+        Axes^Axis_Xup, Drive^Inputs^In^nState4, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 8 (EL7047) - Xup, WcState^WcState
+        Axes^Axis_Xup, Drive^Outputs^Out^nCtrl1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 8 (EL7047) - Xup, STM Control^Control^Enable
+        Axes^Axis_Xup, Drive^Outputs^Out^nCtrl1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 8 (EL7047) - Xup, STM Control^Control^Reduce torque
+        Axes^Axis_Xup, Drive^Outputs^Out^nCtrl1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 8 (EL7047) - Xup, STM Control^Control^Reset
+        Axes^Axis_Xup, Drive^Outputs^Out^nCtrl2, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 8 (EL7047) - Xup, STM Control^Control^Digital output 1
+        Axes^Axis_Xup, Drive^Outputs^Out^nDataOut2[0], TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 8 (EL7047) - Xup, STM Velocity^Velocity
+        Axes^Axis_Xup, Enc^Inputs^In^nComState, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 12 (EL5042) - X, WcState^InputToggle
+        Axes^Axis_Xup, Enc^Inputs^In^nComState, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 12 (EL5042) - X, WcState^WcState
+        Axes^Axis_Xup, Enc^Inputs^In^nDataIn1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 12 (EL5042) - X, FB Inputs Channel 1^Position
+        Axes^Axis_Xup, Enc^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 12 (EL5042) - X, FB Inputs Channel 1^Status^Diag
+        Axes^Axis_Xup, Enc^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 12 (EL5042) - X, FB Inputs Channel 1^Status^Error
+        Axes^Axis_Xup, Enc^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 12 (EL5042) - X, FB Inputs Channel 1^Status^Input cycle counter
+        Axes^Axis_Xup, Enc^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 12 (EL5042) - X, FB Inputs Channel 1^Status^Ready
+        Axes^Axis_Xup, Enc^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 12 (EL5042) - X, FB Inputs Channel 1^Status^TxPDO State
+        Axes^Axis_Xup, Enc^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 12 (EL5042) - X, FB Inputs Channel 1^Status^Warning
+        Axes^Axis_Ydwn, Drive^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 7 (EL7047) - Ydwn, STM Status^Status^Error
+        Axes^Axis_Ydwn, Drive^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 7 (EL7047) - Ydwn, STM Status^Status^Motor stall
+        Axes^Axis_Ydwn, Drive^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 7 (EL7047) - Ydwn, STM Status^Status^Moving negative
+        Axes^Axis_Ydwn, Drive^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 7 (EL7047) - Ydwn, STM Status^Status^Moving positive
+        Axes^Axis_Ydwn, Drive^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 7 (EL7047) - Ydwn, STM Status^Status^Ready
+        Axes^Axis_Ydwn, Drive^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 7 (EL7047) - Ydwn, STM Status^Status^Ready to enable
+        Axes^Axis_Ydwn, Drive^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 7 (EL7047) - Ydwn, STM Status^Status^Torque reduced
+        Axes^Axis_Ydwn, Drive^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 7 (EL7047) - Ydwn, STM Status^Status^Warning
+        Axes^Axis_Ydwn, Drive^Inputs^In^nState2, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 7 (EL7047) - Ydwn, STM Status^Status^Digital input 1
+        Axes^Axis_Ydwn, Drive^Inputs^In^nState2, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 7 (EL7047) - Ydwn, STM Status^Status^Digital input 2
+        Axes^Axis_Ydwn, Drive^Inputs^In^nState2, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 7 (EL7047) - Ydwn, STM Status^Status^Sync error
+        Axes^Axis_Ydwn, Drive^Inputs^In^nState2, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 7 (EL7047) - Ydwn, STM Status^Status^TxPDO Toggle
+        Axes^Axis_Ydwn, Drive^Inputs^In^nState4, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 7 (EL7047) - Ydwn, WcState^InputToggle
+        Axes^Axis_Ydwn, Drive^Inputs^In^nState4, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 7 (EL7047) - Ydwn, WcState^WcState
+        Axes^Axis_Ydwn, Drive^Outputs^Out^nCtrl1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 7 (EL7047) - Ydwn, STM Control^Control^Enable
+        Axes^Axis_Ydwn, Drive^Outputs^Out^nCtrl1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 7 (EL7047) - Ydwn, STM Control^Control^Reduce torque
+        Axes^Axis_Ydwn, Drive^Outputs^Out^nCtrl1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 7 (EL7047) - Ydwn, STM Control^Control^Reset
+        Axes^Axis_Ydwn, Drive^Outputs^Out^nCtrl2, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 7 (EL7047) - Ydwn, STM Control^Control^Digital output 1
+        Axes^Axis_Ydwn, Drive^Outputs^Out^nDataOut2[0], TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 7 (EL7047) - Ydwn, STM Velocity^Velocity
+        Axes^Axis_Ydwn, Enc^Inputs^In^nComState, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 11 (EL5042) - Y, WcState^InputToggle
+        Axes^Axis_Ydwn, Enc^Inputs^In^nComState, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 11 (EL5042) - Y, WcState^WcState
+        Axes^Axis_Ydwn, Enc^Inputs^In^nDataIn1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 11 (EL5042) - Y, FB Inputs Channel 2^Position
+        Axes^Axis_Ydwn, Enc^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 11 (EL5042) - Y, FB Inputs Channel 2^Status^Diag
+        Axes^Axis_Ydwn, Enc^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 11 (EL5042) - Y, FB Inputs Channel 2^Status^Error
+        Axes^Axis_Ydwn, Enc^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 11 (EL5042) - Y, FB Inputs Channel 2^Status^Input cycle counter
+        Axes^Axis_Ydwn, Enc^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 11 (EL5042) - Y, FB Inputs Channel 2^Status^Ready
+        Axes^Axis_Ydwn, Enc^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 11 (EL5042) - Y, FB Inputs Channel 2^Status^TxPDO State
+        Axes^Axis_Ydwn, Enc^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 11 (EL5042) - Y, FB Inputs Channel 2^Status^Warning
+        Axes^Axis_Yup, Drive^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 6 (EL7047) - Yup, STM Status^Status^Error
+        Axes^Axis_Yup, Drive^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 6 (EL7047) - Yup, STM Status^Status^Motor stall
+        Axes^Axis_Yup, Drive^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 6 (EL7047) - Yup, STM Status^Status^Moving negative
+        Axes^Axis_Yup, Drive^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 6 (EL7047) - Yup, STM Status^Status^Moving positive
+        Axes^Axis_Yup, Drive^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 6 (EL7047) - Yup, STM Status^Status^Ready
+        Axes^Axis_Yup, Drive^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 6 (EL7047) - Yup, STM Status^Status^Ready to enable
+        Axes^Axis_Yup, Drive^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 6 (EL7047) - Yup, STM Status^Status^Torque reduced
+        Axes^Axis_Yup, Drive^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 6 (EL7047) - Yup, STM Status^Status^Warning
+        Axes^Axis_Yup, Drive^Inputs^In^nState2, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 6 (EL7047) - Yup, STM Status^Status^Digital input 1
+        Axes^Axis_Yup, Drive^Inputs^In^nState2, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 6 (EL7047) - Yup, STM Status^Status^Digital input 2
+        Axes^Axis_Yup, Drive^Inputs^In^nState2, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 6 (EL7047) - Yup, STM Status^Status^Sync error
+        Axes^Axis_Yup, Drive^Inputs^In^nState2, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 6 (EL7047) - Yup, STM Status^Status^TxPDO Toggle
+        Axes^Axis_Yup, Drive^Inputs^In^nState4, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 6 (EL7047) - Yup, WcState^InputToggle
+        Axes^Axis_Yup, Drive^Inputs^In^nState4, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 6 (EL7047) - Yup, WcState^WcState
+        Axes^Axis_Yup, Drive^Outputs^Out^nCtrl1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 6 (EL7047) - Yup, STM Control^Control^Enable
+        Axes^Axis_Yup, Drive^Outputs^Out^nCtrl1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 6 (EL7047) - Yup, STM Control^Control^Reduce torque
+        Axes^Axis_Yup, Drive^Outputs^Out^nCtrl1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 6 (EL7047) - Yup, STM Control^Control^Reset
+        Axes^Axis_Yup, Drive^Outputs^Out^nCtrl2, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 6 (EL7047) - Yup, STM Control^Control^Digital output 1
+        Axes^Axis_Yup, Drive^Outputs^Out^nDataOut2[0], TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 6 (EL7047) - Yup, STM Velocity^Velocity
+        Axes^Axis_Yup, Enc^Inputs^In^nComState, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 11 (EL5042) - Y, WcState^InputToggle
+        Axes^Axis_Yup, Enc^Inputs^In^nComState, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 11 (EL5042) - Y, WcState^WcState
+        Axes^Axis_Yup, Enc^Inputs^In^nDataIn1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 11 (EL5042) - Y, FB Inputs Channel 1^Position
+        Axes^Axis_Yup, Enc^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 11 (EL5042) - Y, FB Inputs Channel 1^Status^Diag
+        Axes^Axis_Yup, Enc^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 11 (EL5042) - Y, FB Inputs Channel 1^Status^Error
+        Axes^Axis_Yup, Enc^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 11 (EL5042) - Y, FB Inputs Channel 1^Status^Input cycle counter
+        Axes^Axis_Yup, Enc^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 11 (EL5042) - Y, FB Inputs Channel 1^Status^Ready
+        Axes^Axis_Yup, Enc^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 11 (EL5042) - Y, FB Inputs Channel 1^Status^TxPDO State
+        Axes^Axis_Yup, Enc^Inputs^In^nState1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 11 (EL5042) - Y, FB Inputs Channel 1^Status^Warning
+        M1L1_PLC Instance, PlcTask Inputs^MAIN.M1.Axis.NcToPlc, TINC^NC-Task 1 SAF^Axes^Axis_Yup, Outputs^ToPlc
+        M1L1_PLC Instance, PlcTask Inputs^MAIN.M1.bLimitBackwardEnable, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 6 (EL7047) - Yup, STM Status^Status^Digital input 2
+        M1L1_PLC Instance, PlcTask Inputs^MAIN.M1.bLimitForwardEnable, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 6 (EL7047) - Yup, STM Status^Status^Digital input 1
+        M1L1_PLC Instance, PlcTask Inputs^MAIN.M2.Axis.NcToPlc, TINC^NC-Task 1 SAF^Axes^Axis_Ydwn, Outputs^ToPlc
+        M1L1_PLC Instance, PlcTask Inputs^MAIN.M2.bLimitBackwardEnable, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 7 (EL7047) - Ydwn, STM Status^Status^Digital input 2
+        M1L1_PLC Instance, PlcTask Inputs^MAIN.M2.bLimitForwardEnable, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 7 (EL7047) - Ydwn, STM Status^Status^Digital input 1
+        M1L1_PLC Instance, PlcTask Inputs^MAIN.M3.Axis.NcToPlc, TINC^NC-Task 1 SAF^Axes^Axis_Xup, Outputs^ToPlc
+        M1L1_PLC Instance, PlcTask Inputs^MAIN.M3.bLimitBackwardEnable, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 8 (EL7047) - Xup, STM Status^Status^Digital input 2
+        M1L1_PLC Instance, PlcTask Inputs^MAIN.M3.bLimitForwardEnable, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 8 (EL7047) - Xup, STM Status^Status^Digital input 1
+        M1L1_PLC Instance, PlcTask Inputs^MAIN.M4.Axis.NcToPlc, TINC^NC-Task 1 SAF^Axes^Axis_Xdwn, Outputs^ToPlc
+        M1L1_PLC Instance, PlcTask Inputs^MAIN.M4.bLimitBackwardEnable, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 9 (EL7047) - Xdwn, STM Status^Status^Digital input 2
+        M1L1_PLC Instance, PlcTask Inputs^MAIN.M4.bLimitForwardEnable, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 9 (EL7047) - Xdwn, STM Status^Status^Digital input 1
+        M1L1_PLC Instance, PlcTask Inputs^MAIN.M5.Axis.NcToPlc, TINC^NC-Task 1 SAF^Axes^Axis_PitchCoarse, Outputs^ToPlc
+        M1L1_PLC Instance, PlcTask Inputs^MAIN.M5.bLimitBackwardEnable, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 10 (EL7047) - PitchCoarse, STM Status^Status^Digital input 2
+        M1L1_PLC Instance, PlcTask Inputs^MAIN.M5.bLimitForwardEnable, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 10 (EL7047) - PitchCoarse, STM Status^Status^Digital input 1
+        M1L1_PLC Instance, PlcTask Inputs^MAIN.stoEnable1, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 18 (EL1004), Channel 1^Input
+        M1L1_PLC Instance, PlcTask Inputs^MAIN.stoEnable2, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 18 (EL1004), Channel 2^Input
+        M1L1_PLC Instance, PlcTask Inputs^MAIN.x_dwn_enc^Count, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 12 (EL5042) - X, FB Inputs Channel 2^Position
+        M1L1_PLC Instance, PlcTask Inputs^MAIN.x_up_enc^Count, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 12 (EL5042) - X, FB Inputs Channel 1^Position
+        M1L1_PLC Instance, PlcTask Inputs^MAIN.y_dwn_enc^Count, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 11 (EL5042) - Y, FB Inputs Channel 2^Position
+        M1L1_PLC Instance, PlcTask Inputs^MAIN.y_up_enc^Count, TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 11 (EL5042) - Y, FB Inputs Channel 1^Position
+        M1L1_PLC Instance, PlcTask Outputs^MAIN.M1.Axis.PlcToNc, TINC^NC-Task 1 SAF^Axes^Axis_Yup, Inputs^FromPlc
+        M1L1_PLC Instance, PlcTask Outputs^MAIN.M2.Axis.PlcToNc, TINC^NC-Task 1 SAF^Axes^Axis_Ydwn, Inputs^FromPlc
+        M1L1_PLC Instance, PlcTask Outputs^MAIN.M3.Axis.PlcToNc, TINC^NC-Task 1 SAF^Axes^Axis_Xup, Inputs^FromPlc
+        M1L1_PLC Instance, PlcTask Outputs^MAIN.M4.Axis.PlcToNc, TINC^NC-Task 1 SAF^Axes^Axis_Xdwn, Inputs^FromPlc
+        M1L1_PLC Instance, PlcTask Outputs^MAIN.M5.Axis.PlcToNc, TINC^NC-Task 1 SAF^Axes^Axis_PitchCoarse, Inputs^FromPlc

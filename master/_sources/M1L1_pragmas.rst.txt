@@ -1,0 +1,21 @@
+
+Pragmas
+-------
+
+.. csv-table::
+    :header: PLC Name, Total Pragmas, Errors
+    :align: center
+
+    :ref:`M1L1_PLC <M1L1_PLC_overview_pragmas>`, 0, 0
+
+
+.. _M1L1_PLC_overview_pragmas:
+
+
+M1L1_PLC
+^^^^^^^^
+
+Total pragmas found: 0
+Total linter errors: 0
+
+

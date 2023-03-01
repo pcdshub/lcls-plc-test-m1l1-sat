@@ -1,0 +1,166 @@
+
+NC Settings
+-----------
+
+.. csv-table::
+    :header: Axis ID, Name
+    :align: center
+
+        1, Axis_Yup
+        2, Axis_Ydwn
+        3, Axis_Xup
+        4, Axis_Xdwn
+        5, Axis_PitchCoarse
+
+
+
+Axis 1: Axis_Yup
+^^^^^^^^^^^^^^^^
+
+.. csv-table::
+    :header: Setting, Value
+    :align: center
+
+    Axis ID, 1
+    Name, Axis_Yup
+    AxisType, 1
+    CreateSymbols, true
+    Dynamic:Acceleration, 5050
+    Dynamic:Deceleration, 5050
+    Dynamic:DelayTime, 0.008
+    Dynamic:Jerk, 5100500
+    Enc:EncType, 29
+    Enc:Inc:RefSoftSyncMask, #x0000ffff
+    Enc:MaxCount, #xffffffff
+    Enc:ReferenceSystem, 1
+    Enc:ScaleFactorDenominator, 1000
+    Enc:ScaleFactorNumerator, 1
+    General:UnitName, um
+    Id, 1
+    OtherSettings:AllowMotionCmdToSlave, true
+    Velo:FastManual, 90
+    Velo:Maximum, 200
+    Velo:SlowManual, 60
+
+
+
+Axis 2: Axis_Ydwn
+^^^^^^^^^^^^^^^^^
+
+.. csv-table::
+    :header: Setting, Value
+    :align: center
+
+    Axis ID, 2
+    Name, Axis_Ydwn
+    AxisType, 1
+    CreateSymbols, true
+    Dynamic:Acceleration, 5050
+    Dynamic:Deceleration, 5050
+    Dynamic:DelayTime, 0.008
+    Dynamic:Jerk, 5100500
+    Enc:EncType, 29
+    Enc:Inc:RefSoftSyncMask, #x0000ffff
+    Enc:MaxCount, #xffffffff
+    Enc:ReferenceSystem, 1
+    Enc:ScaleFactorDenominator, 1000
+    Enc:ScaleFactorNumerator, 1
+    General:UnitName, um
+    Id, 2
+    OtherSettings:AllowMotionCmdToSlave, true
+    Velo:FastManual, 90
+    Velo:Maximum, 200
+    Velo:SlowManual, 60
+
+
+
+Axis 3: Axis_Xup
+^^^^^^^^^^^^^^^^
+
+.. csv-table::
+    :header: Setting, Value
+    :align: center
+
+    Axis ID, 3
+    Name, Axis_Xup
+    AxisType, 1
+    CreateSymbols, true
+    Dynamic:Acceleration, 1000
+    Dynamic:Deceleration, 1000
+    Dynamic:DelayTime, 0.008
+    Dynamic:Jerk, 5000
+    Enc:EncType, 29
+    Enc:Inc:RefSoftSyncMask, #x0000ffff
+    Enc:MaxCount, #xffffffff
+    Enc:ReferenceSystem, 1
+    Enc:ScaleFactorNumerator, 0.001
+    General:UnitName, um
+    Id, 3
+    OtherSettings:AllowMotionCmdToSlave, true
+    Velo:FastManual, 150
+    Velo:Maximum, 300
+
+
+
+Axis 4: Axis_Xdwn
+^^^^^^^^^^^^^^^^^
+
+.. csv-table::
+    :header: Setting, Value
+    :align: center
+
+    Axis ID, 4
+    Name, Axis_Xdwn
+    AxisType, 1
+    CreateSymbols, true
+    Dynamic:Acceleration, 1000
+    Dynamic:Deceleration, 1000
+    Dynamic:DelayTime, 0.008
+    Dynamic:Jerk, 5000
+    Enc:EncType, 29
+    Enc:Inc:RefSoftSyncMask, #x0000ffff
+    Enc:MaxCount, #xffffffff
+    Enc:ReferenceSystem, 1
+    Enc:ScaleFactorNumerator, 0.001
+    General:UnitName, um
+    Id, 4
+    OtherSettings:AllowMotionCmdToSlave, true
+    Velo:FastManual, 150
+    Velo:Maximum, 300
+
+
+
+Axis 5: Axis_PitchCoarse
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. csv-table::
+    :header: Setting, Value
+    :align: center
+
+    Axis ID, 5
+    Name, Axis_PitchCoarse
+    AxisType, 1
+    CreateSymbols, true
+    Dynamic:Acceleration, 64082
+    Dynamic:AccelerationMaximum, 7042
+    Dynamic:Deceleration, 64082
+    Dynamic:DelayTime, 0.008
+    Dynamic:Jerk, 711156
+    Dynamic:VeloJumpFactor, 2000
+    Enc:EncType, 29
+    Enc:Inc:RefSoftSyncMask, #x0000ffff
+    Enc:MaxCount, #xffffffff
+    Enc:ReferenceSystem, 1
+    Enc:ScaleFactorNumerator, 0.00556
+    General:UnitName, urad
+    Id, 5
+    MotionControl:Time, 0.1
+    OtherSettings:AllowMotionCmdToExtSetGenAxis, true
+    OtherSettings:AllowMotionCmdToSlave, true
+    OtherSettings:PulseDistancePos, 100
+    TargetPosControl:Time, 2
+    Velo:FastManual, 50
+    Velo:Maximum, 100
+    Velo:SlowManual, 30
+
+
